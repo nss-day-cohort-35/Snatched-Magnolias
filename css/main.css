@@ -1,0 +1,22 @@
+body {
+    background-color: #191718;
+    margin: 0;
+    font-family: Tahoma;
+    min-width: 500px;
+}
+h1 {
+    padding-left: 15px;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    text-align: center;
+    font-size: 50px;
+    color: #F2A81D;
+}
+h2 {
+    padding-left: 15px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: #A66963;
+}
