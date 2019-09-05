@@ -15,34 +15,66 @@
             <h1>Welcome to Nashville</h1>
             <h2>Opportunities in Nashville</h2>
         
-            <section id="section--search">
+<!--SETHS BUTTON-->  
+            <section id="so--section--search">
               <div class="search">
-                <input id="so--input--park" type="text" placeholder="Parks by feature">
-                <button id="so--button--park"> Search </button>
-                <div class="so--hint--park"> </div>
-              </div>
-        
-              <div class="search">
-                <input id="aw--input--restaurant" type="text" placeholder="Restaurants by food type">
-                <button id="aw--button--restaurant"> Search </button>
-              </div>
-        
-              <div id="sk--search--meetups" class="search">
-                <input id="sk--input--meetups" type="text" placeholder="Meetups by topic">
-                <button id="sk--button--meetups"> Search </button>
-              </div>
-        
-              <div class="search">
-                <input id="ct--input--concerts" type="text" placeholder="Music by genre">
-                <button id="ct--button--concerts"> Search </button>
-              </div>
-            </section>
-        
-            <div class="innerContainer">
+              <input type="text" placeholder="search parks" id="search-bar"/>
+             <button type="button" style="color:black;" id="search-parks">Search</button>
+             <div class="parksResultsGroup" id="parksResultsContainer"></div>
+          </div>
+          </section>
+
+
+<!--SAGES BUTTON-->  
+              <section id="sk--section--search">
+                  <div class="search">
+                      <input type="text" placeholder="search meetUps" id="search-bar"/>
+                      <button type="button" style="color:black;" id="search-meetUps">Search</button>
+                      <div class="meetUpsResultsGroup" id="meetUpsResultsContainer"></div>
+                  </div>
+                  </section>
+      
+<!--CHANDLER BUTTON-->  
+              <section id="ct--section--search">
+                <div class="search">
+                  <input type="text" placeholder="search concerts" id="search-bar"/>
+                  <button type="button" style="color:black" id="search-concerts">Search</button>
+                  <div class="concertsResultsGroup" id="concertsResultsContainer"></div>
+               </div>
+               </section>
+
+<!--ARYNS BUTTON-->
+          <section id="aw--section--search">
+            <div class="search">
+                <input type="text" placeholder="search restaurants" id="search-bar"/>
+                <button type="button" style="color:black;" id="search-restaurants">Search</button>
+                <div class="restaurantResultsGroup" id="restaurantResultsContainer"></div>
+            </div>
+          </section>
+
+          <div class="innerContainer">
               <h2>Itinerary</h2>
               <section id="section--results"></section>
               <!-- <div class = "result--1>  </div>-->
-            </div>
+              <!--aryn's restaurant results  -->
+
+
+
+
+            <div id="itineraryContainer">
+                <h3>Here is your itinerary</h3>
+                <span class="itinerarySectionName itinObj">Your Park: </span>
+                <div class="itinObj" id="parkItinerary"></div>
+
+                <span class="itinerarySectionName itinObj">Your Restaurant: </span>
+                <div class="itinObj" id="restaurantItinerary"></div>
+
+                <span class="itinerarySectionName itinObj">Your Event: </span>
+                <div class="itinObj" id="eventItinerary"></div>
+                <span class="itinerarySectionName itinObj">Your Concert: </span>
+                <div class="itinObj" id="concertItinerary"></div>
+              </div>
+          
         </article>
     </div>
       
@@ -51,9 +83,9 @@
 
 
     <script src="js/meetUps.js"></script>
-    <script src="js/meetUps2.js"></script>
-    <script src="js/restaurants.js"></script>
+    <script src="js/restaurant.js"></script>
     <script src="js/parks.js"></script>
     <script src="js/concerts.js"></script>
+    <script src="js/cuisines.js"></script>
 </body>
 </html>

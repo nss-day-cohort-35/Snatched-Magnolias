@@ -22,3 +22,11 @@ h2 {
     font-size: 30px;
     color: #A66963;
 }
+h3 {
+  padding-left: 15px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: left;
+  font-size: 15px;
+  color: #5B61D9;
+}
