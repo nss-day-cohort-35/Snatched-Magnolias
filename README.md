@@ -19,11 +19,10 @@ Use 4 API's to populate an iternary trip for young professionals in the greater 
 
 ### Implemented Skills & Concepts
 
-*Code
-*Functions
-*Persistent data storage
-*Github
-*CSS
-*Building DOM components
-*Handling user events
-*Modular code
+- Functions
+- Persistent data storage
+- Github
+- CSS
+- Building DOM components
+- Handling user events
+- Modular code
