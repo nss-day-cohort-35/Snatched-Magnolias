@@ -2,6 +2,8 @@ body {
     background-color: #191718;
     margin: 0;
     font-family: Tahoma;
+    font-size: 15px;
+    color: #A66963;
     min-width: 500px;
 }
 h1 {
@@ -16,7 +18,15 @@ h2 {
     padding-left: 15px;
     text-transform: uppercase;
     letter-spacing: 10px;
-    text-align: center;
+    text-align: left;
     font-size: 30px;
     color: #A66963;
+}
+h3 {
+  padding-left: 15px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: left;
+  font-size: 15px;
+  color: #5B61D9;
 }
