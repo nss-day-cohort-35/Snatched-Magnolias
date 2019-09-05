@@ -4,7 +4,7 @@ Welcome to Nashville Group Project - Aryn, Chandler, Sage, and Seth
 
 ## How to use
 
-1a) Download as a zip and unzipp to your preferred location and open index.html
+1a) Download as a zip and unzip to your preferred location and open index.html
 
 1b) Fork it to your github & clone. You must have js nose installed https://nodejs.org/en
 
