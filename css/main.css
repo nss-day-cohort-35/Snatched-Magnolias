@@ -30,3 +30,7 @@ h3 {
   font-size: 15px;
   color: #5B61D9;
 }
+img {
+    height: auto;
+    width: 100%;
+    }
