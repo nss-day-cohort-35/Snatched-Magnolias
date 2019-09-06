@@ -14,16 +14,16 @@ function lookUp (searchTerm){
   fetch(`https://www.eventbriteapi.com/v3/events/search/?q=${searchTerm}&location.address=nashville&token=7JJ7JBOQ23XZHTFLOROV`)      
     .then(result => result.json())
         .then(parsedResult => {
-            console.log(parsedResult.restaurants);
-            parsedResult.restaurants.forEach(element => {
+            console.log(parsedResult.meetUps);
+            parsedResult.meetUps.forEach(element => {
                 document.querySelector("#section-results").innerHTML += dataDisplay (data);
             });
     
         });
-    }
-
+}
 
 document.querySelector("#search-meetUps").addEventListener ("click", event => {
     let searchTerm = document.querySelector("#sk-search-bar").value
-    lookUp(searchTerm);
-})
+    lookUp(searchTerm)
+});
+
