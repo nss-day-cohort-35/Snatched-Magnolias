@@ -1,6 +1,6 @@
-function concertSearch(searchTerm) {
+function concertSearch(genre) {
   fetch(
-    "https://app.ticketmaster.com/discovery/v2/events.json?classificationName=music&city=nashville&radius=25&apikey=FHGsJMHDgolgJb3l9NsY4GYpxoLZTMmC"
+    `https://app.ticketmaster.com/discovery/v2/events.json?classificationName=music&city=nashville&radius=25&apikey=FHGsJMHDgolgJb3l9NsY4GYpxoLZTMmC&classificationName=${genre}`
   )
     .then(response => response.json())
     .then(parsedData => {
