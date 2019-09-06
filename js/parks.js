@@ -1,19 +1,14 @@
-function soResults(array) {
-  array.forEach(data => {
-    document.querySelector("#section-results").innerHTML += dataDisplay(data);
-  });
-}
-
 function lookUp(searchTerm) {
   fetch("https://data.nashville.gov/resource/74d7-b74t.json")
-  .then(result => result.json())
-  .then(parsedResult => {
-      console.log(parsedResult.restaurants);
-      parsedResult.restaurants.forEach(element => {
-          document.querySelector("#section-results").innerHTML += dataDisplay (data);
+    .then(response => response.json())
+    .then(parsedData => {
+      console.table(parsedData.park_name);
+      parsedData.park_name.forEach(element => {
+        document.querySelector(
+          "#section-results"
+        ).innerHTML += `<h3>${element.name}</h3>`;
       });
-
-  });
+    });
 }
 
 document.querySelector("#search-parks").addEventListener("click", event => {
