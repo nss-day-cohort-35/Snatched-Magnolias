@@ -8,12 +8,19 @@ function lookUp (searchTerm){
         .then(parsedResult => {
             console.log(parsedResult.restaurants);
             parsedResult.restaurants.forEach(element => {
-                document.querySelector("#restaurantResultsContainer").innerHTML += `<h1>${element.restaurant.name}</h1>`;
+                document.querySelector("#restaurantResultsContainer").innerHTML += `<h3>${element.restaurant.name}</h3>`;
             });
     
         });
     }
 
+    // let outputBox = document.getElementById ("output");
+
+    // for(let i=0; i<HTMLAllCollection.length; i++) {
+    //     if (output === "") {
+    //         output = 
+    //     }
+    // }
 
 
 
@@ -21,3 +28,17 @@ document.querySelector("#search-restaurants").addEventListener ("click", event =
     let searchTerm = document.querySelector("#search-bar").value
     lookUp(searchTerm);
 })
+
+
+
+// function getSelectedOptions()
+
+
+
+const restaurantItin = [];
+
+
+
+
+
+
