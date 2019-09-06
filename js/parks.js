@@ -1,3 +1,4 @@
+/*
 function lookUp(searchTerm) {
   fetch("https://data.nashville.gov/resource/74d7-b74t.json")
     .then(response => response.json())
@@ -17,3 +18,4 @@ document.querySelector("#search-parks").addEventListener("click", event => {
 });
 
 lookUp();
+*/
