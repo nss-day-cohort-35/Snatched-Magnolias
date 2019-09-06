@@ -1,84 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Welcome to Nashville</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-    <img src="images/nashville.jpg" alt="Korean Vets Bridge, Nashville TN.">
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <img src="images/nashville.jpg" alt="Korean Vets Bridge, Nashville TN." />
     <div id="container">
-       <article class="container">
+      <article class="container">
+        <h1>Welcome to Nashville</h1>
+        <h2>Opportunities in Nashville</h2>
 
-            <h1>Welcome to Nashville</h1>
-            <h2>Opportunities in Nashville</h2>
-        
-<!--SETHS BUTTON-->  
-            <section id="so-search">
-              <div class="search">
-              <input type="text" placeholder="Parks" id="so-search-bar">
-             <button type="button" id="search-parks">Search</button>
-             <div class="parksResultsGroup" id="parksResultsContainer"></div>
+        <!--SETHS BUTTON-->
+        <section id="so-search">
+          <div class="search">
+            <input type="text" placeholder="Parks" id="so-search-bar" />
+            <button type="button" id="search-parks">Search</button>
+            <div class="parksResultsGroup" id="parksResultsContainer"></div>
           </div>
-          </section>
+        </section>
 
-<!--SAGES BUTTON-->  
-              <section id="sk-search">
-                  <div class="search">
-                      <input type="text" placeholder="Meet Ups" id="sk-search-bar">
-                      <button type="button" id="search-meetUps">Search</button>
-                      <div class="meetUpsResultsGroup" id="meetUpsResultsContainer"></div>
-                  </div>
-                  </section>
-      
-<!--CHANDLER BUTTON-->  
-              <section id="ct-search">
-                <div class="search">
-                  <input type="text" placeholder="Concerts" id="ct-search-bar">
-                  <button type="button" id="search-concerts">Search</button>
-                  <div class="concertsResultsGroup" id="concertsResultsContainer"></div>
-               </div>
-               </section>
+        <!--SAGES BUTTON-->
+        <section id="sk-search">
+          <div class="search">
+            <input type="text" placeholder="Meet Ups" id="sk-search-bar" />
+            <button type="button" id="search-meetUps">Search</button>
+            <div class="meetUpsResultsGroup" id="meetUpsResultsContainer"></div>
+          </div>
+        </section>
 
-<!--ARYNS BUTTON-->
-          <section id="aw-search">
-            <div class="search">
-                <input type="text" placeholder="Restaurants" id="aw-search-bar">
-                <button type="button" id="search-restaurants">Search</button>
-                <div class="restaurantResultsGroup" id="restaurantResultsContainer"></div>
-            </div>
-          </section>
+        <!--CHANDLER BUTTON-->
+        <section id="ct-search">
+          <div class="search">
+            <input type="text" placeholder="Concerts" id="ct-search-bar" />
+            <button type="button" id="search-concerts">Search</button>
+            <div
+              class="concertsResultsGroup"
+              id="concertsResultsContainer"
+            ></div>
+          </div>
+        </section>
 
-<!--Results-->
-            <div class="innerContainer">
-              <h2>Results</h2>
-              <section id="section-results"></section>
-            </div>
-<!--Itinerary-->
-            <div id="itineraryContainer">
-                <h2>Itinerary:</h2>
+        <!--ARYNS BUTTON-->
+        <section id="aw-search">
+          <div class="search">
+            <input type="text" placeholder="Restaurants" id="aw-search-bar" />
+            <button type="button" id="search-restaurants">Search</button>
+            <div
+              class="restaurantResultsGroup"
+              id="restaurantResultsContainer"
+            ></div>
+          </div>
+        </section>
 
-                <span class="itineraryResults">Park: </span>
-                <div id="parkItinerary"></div>
+        <!--Results-->
+        <div class="innerContainer">
+          <h2>Results</h2>
+          <section id="section-results"></section>
+        </div>
+        <!--Itinerary-->
+        <div id="itineraryContainer">
+          <h2>Itinerary:</h2>
 
-                <span class="itineraryResults">Restaurant: </span>
-                <div id="restaurantItinerary"></div>
+          <span class="itineraryResults">Park: </span>
+          <div id="parkItinerary"></div>
 
-                <span class="itineraryResults">Meet Up: </span>
-                <div id="meetUpsItinerary"></div>
+          <span class="itineraryResults">Restaurant: </span>
+          <div id="restaurantItinerary"></div>
 
-                <span class="itineraryResults">Concert: </span>
-                <div id="concertItinerary"></div>
-              </div>
-          
-        </article>
+          <span class="itineraryResults">Meet Up: </span>
+          <div id="meetUpsItinerary"></div>
+
+          <span class="itineraryResults">Concert: </span>
+          <div id="concertItinerary"></div>
+        </div>
+      </article>
     </div>
-      
+
     <script src="js/meetUps.js"></script>
     <script src="js/restaurant.js"></script>
     <script src="js/parks.js"></script>
     <script src="js/concerts.js"></script>
-</body>
+  </body>
 </html>
