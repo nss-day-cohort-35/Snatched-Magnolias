@@ -4,9 +4,13 @@ function lookUp(searchTerm) {
     .then(parsedData => {
       parsedData.forEach(element => {
         console.log(element.park_name);
+        console.log(element.acres);
         document.querySelector(
           "#section-results"
         ).innerHTML += `<h3>${element.park_name}</h3>`;
+        document.querySelector(
+          "#section-results"
+        ).innerHTML += `<h3>${element.acres}</h3>`;
       });
     });
 }
