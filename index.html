@@ -1,56 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Welcome to Nashville</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-    <img src="images/nashville.jpg" height="auto" width="100%" alt="Korean Vets Bridge, Nashville TN.">
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <img src="images/nashville.jpg" alt="Korean Vets Bridge, Nashville TN." />
     <div id="container">
-       <article class="container">
+      <article class="container">
+        <h1>Welcome to Nashville</h1>
+        <h2>Opportunities in Nashville</h2>
 
             <h1>Welcome to Nashville</h1>
+<fieldset id="flex-search"> 
             <h2>Opportunities in Nashville</h2>
-        
+      
 <!--SETHS BUTTON-->  
-            <section id="so--section--search">
+            <section id="so-search">
               <div class="search">
-              <input type="text" placeholder="search parks" id="search-bar"/>
-             <button type="button" style="color:black;" id="search-parks">Search</button>
+              <input type="text" placeholder="Parks" id="so-search-bar">
+             <button type="button" id="search-parks">Search</button>
              <div class="parksResultsGroup" id="parksResultsContainer"></div>
           </div>
           </section>
-
-
 <!--SAGES BUTTON-->  
-              <section id="sk--section--search">
+              <section id="sk-search">
                   <div class="search">
-                      <input type="text" placeholder="search meetUps" id="search-bar"/>
-                      <button type="button" style="color:black;" id="search-meetUps">Search</button>
+                      <input type="text" placeholder="Meet Ups" id="sk-search-bar">
+                      <button type="button" id="search-meetUps">Search</button>
                       <div class="meetUpsResultsGroup" id="meetUpsResultsContainer"></div>
                   </div>
                   </section>
       
 <!--CHANDLER BUTTON-->  
-              <section id="ct--section--search">
+              <section id="ct-search">
                 <div class="search">
-                  <input type="text" placeholder="search concerts" id="search-bar"/>
-                  <button type="button" style="color:black" id="search-concerts">Search</button>
+                  <input type="text" placeholder="Concerts" id="ct-search-bar">
+                  <button type="button" id="search-concerts">Search</button>
                   <div class="concertsResultsGroup" id="concertsResultsContainer"></div>
                </div>
                </section>
 
 <!--ARYNS BUTTON-->
-          <section id="aw--section--search">
+          <section id="aw-search">
             <div class="search">
-                <input type="text" placeholder="search restaurants" id="search-bar"/>
-                <button type="button" style="color:black;" id="search-restaurants">Search</button>
+                <input type="text" placeholder="Restaurants" id="aw-search-bar">
+                <button type="button" id="search-restaurants">Search</button>
                 <div class="restaurantResultsGroup" id="restaurantResultsContainer"></div>
             </div>
           </section>
+<<<<<<< HEAD
 
           <div class="innerContainer">
               <h2>Itinerary</h2>
@@ -61,14 +63,31 @@
 
 <!-- 
 
+=======
+</fieldset>
+<!--Results-->
+<fieldset id="flex-results"> 
+            <div class="innerContainer">
+              <h2>Results:</h2>
+              <section id="section-results"></section>
+            </div>
+</fieldset>
+<!--Itinerary-->
+<fieldset id="flex-itinerary"> 
+>>>>>>> master
             <div id="itineraryContainer">
-                <h3>Here is your itinerary</h3>
-                <span class="itinerarySectionName itinObj">Your Park: </span>
-                <div class="itinObj" id="parkItinerary"></div>
+                <h2>Itinerary:</h2>
 
-                <span class="itinerarySectionName itinObj">Your Restaurant: </span>
-                <div class="itinObj" id="restaurantItinerary"></div>
+        <!--Results-->
+        <div class="innerContainer">
+          <h2>Results</h2>
+          <section id="section-results"></section>
+        </div>
+        <!--Itinerary-->
+        <div id="itineraryContainer">
+          <h2>Itinerary:</h2>
 
+<<<<<<< HEAD
                 <span class="itinerarySectionName itinObj">Your Event: </span>
                 <div class="itinObj" id="eventItinerary"></div>
                 <span class="itinerarySectionName itinObj">Your Concert: </span>
@@ -82,9 +101,24 @@
       <section id="itinerary-container"></section>
     </div>
      
+=======
+          <span class="itineraryResults">Park: </span>
+          <div id="parkItinerary"></div>
+>>>>>>> master
 
+          <span class="itineraryResults">Restaurant: </span>
+          <div id="restaurantItinerary"></div>
 
+          <span class="itineraryResults">Meet Up: </span>
+          <div id="meetUpsItinerary"></div>
 
+          <span class="itineraryResults">Concert: </span>
+          <div id="concertItinerary"></div>
+        </div>
+      </article>
+    </div>
+  </fieldset>
+  
     <script src="js/meetUps.js"></script>
     <script src="js/restaurant.js"></script>
     <script src="js/parks.js"></script>
