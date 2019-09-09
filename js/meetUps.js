@@ -1,3 +1,4 @@
+/*
 // Cotton Eyed Joe AND HE GIVES IT BACK as a string
 function dataDisplay(data) {
   return `<h3>${data.name.text}<h3>`;
@@ -29,3 +30,5 @@ document.querySelector("#search-meetUps").addEventListener("click", event => {
   let searchTerm = document.querySelector("#sk-search-bar").value;
   sklookUp(searchTerm);
 });
+
+*/

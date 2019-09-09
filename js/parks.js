@@ -27,6 +27,7 @@ document.querySelector("#search-parks").addEventListener("click", event => {
   solookUp(searchTerm);
 });
 
+
 /*
 
 document.querySelector("#buttonAdd").addEventListener("click", event => {
