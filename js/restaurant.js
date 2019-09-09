@@ -15,17 +15,24 @@ document.querySelector("#search-restaurants").addEventListener("click", event =>
     .then(restaurantData => {
         console.log(restaurantData.restaurants);
         restaurantData.restaurants.forEach(item => {
-            document.querySelector("#section-results").innerHTML += `<h3>${item.restaurant.name}</h3>`
+            document.querySelector("#section-results").innerHTML += `<h3 id=${item.id}>${item.restaurant.name}</h3> <button type="button" id="buttonIdaw--${item.id}">ADD</button>`;
         })
     })
 });
 // function getSelectedOptions()
 
-
-
 const restaurantItin = [];
 
 
+document.querySelector("#section-results").addEventListener("click", event => {
+    if (event.target.id.startsWith("buttonIdaw")) {
+        let itemId = event.target.id.split("--")[1]
+        let selectedItem = document.getElementById(itemId)
+        let itineraryContainer = document.getElementById("restaurantItinerary")
+        itineraryContainer.appendChild(selectedItem)
+        document.querySelector("#section-results").innerHTML=" " 
+    }
+});
 
 
 
