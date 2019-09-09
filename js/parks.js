@@ -29,7 +29,7 @@ document.querySelector("#search-parks").addEventListener("click", event => {
 
 document.querySelector("#section-results").addEventListener("click", event => {
   if (event.target.id.startsWith("so-buttonAdd")) {
-    let eventId = event.target.id.split("--")[1];
+    let eventId = element.park_name;
     let selectedEvent = document.getElementById(eventId);
     let itineraryContainer = document.getElementById("parkItinerary");
     itineraryContainer.appendChild(selectedEvent);
