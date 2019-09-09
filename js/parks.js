@@ -8,7 +8,7 @@ function soLookUp(searchTerm) {
         console.log(element.disc_golf);
         document.querySelector(
           "#section-results"
-        ).innerHTML += `<h3>Park Name: ${element.park_name}<button type="button" id="buttonAdd">Add</button>`;
+        ).innerHTML += `<h3>Park Name: ${element.park_name}<button type="button" id="so-buttonAdd--${element.park_name}">ADD</button>`;
         document.querySelector(
           "#section-results"
         ).innerHTML += `<h3>Disc Golf: ${element.disc_golf}</h3>`;
@@ -25,4 +25,14 @@ function soLookUp(searchTerm) {
 document.querySelector("#search-parks").addEventListener("click", event => {
   let searchTerm = document.querySelector("#so-search-bar").value;
   soLookUp(searchTerm);
+});
+
+document.querySelector("#section-results").addEventListener("click", event => {
+  if (event.target.id.startsWith("so-buttonAdd")) {
+    let eventId = event.target.id.split("--")[1];
+    let selectedEvent = document.getElementById(eventId);
+    let itineraryContainer = document.getElementById("parkItinerary");
+    itineraryContainer.appendChild(selectedEvent);
+    document.querySelector("#section-results").innerHTML = "";
+  }
 });
