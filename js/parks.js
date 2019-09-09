@@ -8,7 +8,7 @@ function lookUp(searchTerm) {
         console.log(element.disc_golf);
         document.querySelector(
           "#section-results"
-        ).innerHTML += `<h3>Park Name: ${element.park_name}`;
+        ).innerHTML += `<h3>Park Name: ${element.park_name}<button type="button" id="buttonAdd">Add</button>`;
         document.querySelector(
           "#section-results"
         ).innerHTML += `<h3>Disc Golf: ${element.disc_golf}</h3>`;
@@ -27,6 +27,12 @@ document.querySelector("#search-parks").addEventListener("click", event => {
   lookUp(searchTerm);
 });
 
+document.querySelector("#buttonAdd").addEventListener("click", event => {
+  let addingITem = document.querySelector("#so-search-bar").value;
+  addingTo(addingItem);
+});
+
+/*
 if ("geolocation" in navigator) {
   // check if geolocation is supported/enabled on current browser
   navigator.geolocation.getCurrentPosition(
@@ -52,3 +58,4 @@ if ("geolocation" in navigator) {
   // get your location some other way
   console.log("geolocation is not enabled on this browser");
 }
+*/
