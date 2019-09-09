@@ -31,27 +31,20 @@ h3 {
   letter-spacing: 5px;
   text-align: left;
   font-size: 15px;
-  color: #5B61D9;
+  color: white;
 }
 img {
     height: auto;
     width: 100%;
     }
 
-<<<<<<< HEAD
 button {
+    background-color: #a66963;
     color: black;
     margin: 1em;
     width: 5%;
     border-radius: 5px;
 }
-=======
-/* button {
-    color: black;
-    background-color: white;
-
-} */
->>>>>>> da27d59330b3cffe1361294d3f4588c15dd64425
 fieldset.flex-search {
     display: flex;
     flex-direction: column;
@@ -72,6 +65,8 @@ fieldset.flex-itinerary {
     border: none;
     margin: 25px;
     padding: 1rem;
+    font-family: tahoma;
+    text-align: center;
 }
 
 input[type="text"] {
@@ -101,6 +96,7 @@ footer {
     display: flex; 
     align-items: center;
     justify-content: space-between;
+    background-color: #041E42;
 }
 
 .footer-links {
@@ -110,4 +106,8 @@ footer {
     flex-wrap: wrap;
     flex: 1;
     list-style-type: none;
+}
+
+.baby {
+    border-radius: 50%;
 }
