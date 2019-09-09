@@ -9,13 +9,19 @@ function lookUp(searchTerm){
     });
 }
 
+const foodArray = []
+
 document.querySelector("#search-restaurants").addEventListener("click", event => {
     let searchTerm = document.querySelector("#aw-search-bar").value
     lookUp(searchTerm)
     .then(restaurantData => {
         console.log(restaurantData.restaurants);
+        i = -1;
+        foodArray.length = 0;
         restaurantData.restaurants.forEach(item => {
-            document.querySelector("#section-results").innerHTML += `<h3 id=${item.id}>${item.restaurant.name}</h3> <button type="button" id="buttonIdaw--${item.id}">ADD</button>`;
+            i++;
+            foodArray[i] = item;
+            document.querySelector("#section-results").innerHTML += `<h3 id=${i}>${item.restaurant.name}</h3> <button type="button" id="buttonIdaw--${i}">ADD</button>`;
         })
     })
 });
