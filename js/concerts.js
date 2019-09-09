@@ -23,7 +23,10 @@ document.querySelector("#section-results").addEventListener("click", event => {
           let eventId = event.target.id.split("--")[1]
           let selectedEvent = document.getElementById(eventId)
           let itineraryContainer = document.getElementById("concertItinerary")
+          itineraryContainer.innerHTML=""
           itineraryContainer.appendChild(selectedEvent)
+          
+          //Resets after adding to itinerary//
           document.querySelector("#section-results").innerHTML=""
      }
    });

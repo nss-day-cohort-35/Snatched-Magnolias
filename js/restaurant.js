@@ -29,6 +29,7 @@ document.querySelector("#section-results").addEventListener("click", event => {
         let itemId = event.target.id.split("--")[1]
         let selectedItem = document.getElementById(itemId)
         let itineraryContainer = document.getElementById("restaurantItinerary")
+        itineraryContainer.innerHTML=""
         itineraryContainer.appendChild(selectedItem)
         document.querySelector("#section-results").innerHTML=" " 
     }

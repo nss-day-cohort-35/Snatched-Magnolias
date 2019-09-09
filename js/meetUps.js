@@ -10,7 +10,7 @@ document.querySelector("#section-results").innerHTML += dataDisplay(data);
 });
 }
 
-function skLookUp (searchTerm){
+function lookUp (searchTerm){
   fetch(`https://www.eventbriteapi.com/v3/events/search/?q=${searchTerm}&location.address=nashville&token=7JJ7JBOQ23XZHTFLOROV`)      
     .then(result => result.json())
         .then(parsedResult => {
@@ -24,6 +24,6 @@ function skLookUp (searchTerm){
 
 document.querySelector("#search-meetUps").addEventListener ("click", event => {
     let searchTerm = document.querySelector("#sk-search-bar").value
-    skLookUp(searchTerm)
+    lookUp(searchTerm)
 });
 
