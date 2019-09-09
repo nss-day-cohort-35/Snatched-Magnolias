@@ -35,9 +35,11 @@ img {
     width: 100%;
     }
 
-.button {
+/* button {
     color: black;
-}
+    background-color: white;
+
+} */
 fieldset.flex-search {
     display: flex;
     flex-direction: column;
@@ -64,3 +66,17 @@ input[type="search"] {
     border-radius: 3px;
 }
 
+footer {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+    list-style-type: none;
+}
