@@ -8,7 +8,7 @@ function concertSearch(genre) {
       parsedData._embedded.events.forEach(element => {
         document.querySelector(
           "#section-results"
-        ).innerHTML += `<h3>${element.name}</h3>`;
+        ).innerHTML += `<h3 id=${element.id}>${element.name}</h3> <button type="button" id="buttonAdd--${element.id}">ADD</button>`;
       });
     });
 }
@@ -17,3 +17,16 @@ document.querySelector("#search-concerts").addEventListener("click", event => {
   let searchTerm = document.querySelector("#ct-search-bar").value;
   concertSearch(searchTerm);
 });
+
+document.querySelector("#section-results").addEventListener("click", event => {
+  if (event.target.id.startsWith("buttonAdd")) {
+    let eventId = event.target.id.split("--")[1];
+    let selectedEvent = document.getElementById(eventId);
+    let itineraryContainer = document.getElementById("concertItinerary");
+    itineraryContainer.appendChild(selectedEvent);
+    document.querySelector("#section-results").innerHTML = "";
+  }
+});
+
+let moString = "mo is the best";
+moString.split(" ")[1][("mo", "is", "the", "best")];

@@ -11,10 +11,8 @@ function skResults(array) {
   });
 }
 
-function sklookUp(searchTerm) {
-  fetch(
-    `https://www.eventbriteapi.com/v3/events/search/?q=${searchTerm}&location.address=nashville&token=7JJ7JBOQ23XZHTFLOROV`
-  )
+function skLookUp (searchTerm){
+  fetch(`https://www.eventbriteapi.com/v3/events/search/?q=${searchTerm}&location.address=nashville&token=7JJ7JBOQ23XZHTFLOROV`)      
     .then(result => result.json())
     .then(parsedResult => {
       console.log(parsedResult.meetUps);
@@ -26,9 +24,9 @@ function sklookUp(searchTerm) {
     });
 }
 
-document.querySelector("#search-meetUps").addEventListener("click", event => {
-  let searchTerm = document.querySelector("#sk-search-bar").value;
-  sklookUp(searchTerm);
+document.querySelector("#search-meetUps").addEventListener ("click", event => {
+    let searchTerm = document.querySelector("#sk-search-bar").value
+    skLookUp(searchTerm)
 });
 
 */
