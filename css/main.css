@@ -1,26 +1,26 @@
 body {
-    background-color: #191718;
-    margin: 0;
-    font-family: Tahoma;
-    font-size: 15px;
-    color: #5B61D9;
-    min-width: 500px;
+  background-color: #191718;
+  margin: 0;
+  font-family: Tahoma;
+  font-size: 15px;
+  color: #5b61d9;
+  min-width: 500px;
 }
 h1 {
-    padding-left: 15px;
-    text-transform: uppercase;
-    letter-spacing: 20px;
-    text-align: center;
-    font-size: 50px;
-    color: #F2A81D;
+  padding-left: 15px;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  text-align: center;
+  font-size: 50px;
+  color: #f2a81d;
 }
 h2 {
-    padding-left: 15px;
-    text-transform: uppercase;
-    letter-spacing: 15px;
-    text-align: left;
-    font-size: 20px;
-    color: #A66963;
+  padding-left: 15px;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  text-align: left;
+  font-size: 20px;
+  color: #a66963;
 }
 h3 {
   padding-left: 15px;
@@ -28,35 +28,34 @@ h3 {
   letter-spacing: 5px;
   text-align: left;
   font-size: 15px;
-  color: #5B61D9;
+  color: #5b61d9;
 }
 img {
-    height: auto;
-    width: 100%;
-    }
+  height: auto;
+  width: 100%;
+}
 
 .button {
-    color: black;
+  color: black;
 }
 fieldset.flex-search {
-    display: flex;
-    flex-direction: column;
-    border: none;
-    margin: 25px;
-    padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin: 25px;
+  padding: 1rem;
 }
 fieldset.flex-results {
-    display: flex;
-    flex-direction: column;
-    border: none;
-    margin: 25px;
-    padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin: 25px;
+  padding: 1rem;
 }
 fieldset.flex-itinerary {
-    display: flex;
-    flex-direction: column;
-    border: none;
-    margin: 25px;
-    padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin: 25px;
+  padding: 1rem;
 }
-
