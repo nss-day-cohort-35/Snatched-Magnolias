@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: Tahoma;
     font-size: 15px;
-    color: #5B61D9;
+    color: white;
     min-width: 500px;
 }
 h1 {
@@ -12,16 +12,19 @@ h1 {
     letter-spacing: 20px;
     text-align: center;
     font-size: 50px;
-    color: #F2A81D;
+    color: #FFB81C;
 }
 h2 {
-    padding-left: 15px;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
-    font-size: 20px;
-    color: #A66963;
+    font-size: 30px;
+    color: white;
+    background-color: #041E42;
+    width: 100%;
+    padding: 16px;
 }
+
 h3 {
   padding-left: 15px;
 
@@ -35,9 +38,20 @@ img {
     width: 100%;
     }
 
-.button {
+<<<<<<< HEAD
+button {
     color: black;
+    margin: 1em;
+    width: 5%;
+    border-radius: 5px;
 }
+=======
+/* button {
+    color: black;
+    background-color: white;
+
+} */
+>>>>>>> da27d59330b3cffe1361294d3f4588c15dd64425
 fieldset.flex-search {
     display: flex;
     flex-direction: column;
@@ -60,7 +74,40 @@ fieldset.flex-itinerary {
     padding: 1rem;
 }
 
-input[type="search"] {
+input[type="text"] {
     border-radius: 3px;
+    margin: 1em;
+    padding: 12px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: sans-serif;
+    text-decoration: none;
+    letter-spacing: 2px;
 }
 
+.search{
+    display: flex;
+    justify-content: center;
+    
+}
+
+fieldset {
+    border-style: none;
+    margin: 0;
+    padding: 0;
+}
+footer {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+    list-style-type: none;
+}
