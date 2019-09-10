@@ -36,19 +36,28 @@ document.querySelector("#search-parks").addEventListener("click", event => {
   let searchTerm = document.querySelector("#so-search-bar").value;
   soLookUp(searchTerm).then(parkData => {
     console.log(parkData);
+    i = -1;
+    parkArray.length = 0;
     parkData.forEach(item => {
+      i++;
+      parkArray[i] = item;
       document.querySelector(
         "#section-results"
-      ).innerHTML += `<h3 id=${item.park_name}>${item.park_name}</h3> <button type="button" id="buttonIdso--${item.park_name}">ADD</button>`;
+      ).innerHTML += `<h3 id="title--${i}">${item.park_name}</h3> <button type="button" id="buttonIdso--${i}">ADD</button>`;
     });
   });
 });
 
+const parkArray = [];
+
 document.querySelector("#section-results").addEventListener("click", event => {
   if (event.target.id.startsWith("buttonIdso")) {
     let itemId = event.target.id.split("--")[1];
-    let selectedItem = document.getElementById(itemId);
+    console.log(itemId, "itemId");
+    let selectedItem = document.getElementById(`title--${itemId}`);
+    console.log(selectedItem, "selectedItem");
     let itineraryContainer = document.getElementById("parkItinerary");
+    itineraryContainer.innerHTML = "";
     itineraryContainer.appendChild(selectedItem);
     document.querySelector("#section-results").innerHTML = " ";
   }

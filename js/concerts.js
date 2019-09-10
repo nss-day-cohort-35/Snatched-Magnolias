@@ -19,28 +19,17 @@ document.querySelector("#search-concerts").addEventListener("click", event => {
 });
 
 document.querySelector("#section-results").addEventListener("click", event => {
-<<<<<<< HEAD
   if (event.target.id.startsWith("buttonAdd")) {
     let eventId = event.target.id.split("--")[1];
     let selectedEvent = document.getElementById(eventId);
     let itineraryContainer = document.getElementById("concertItinerary");
+    itineraryContainer.innerHTML = "";
     itineraryContainer.appendChild(selectedEvent);
+
+    //Resets after adding to itinerary//
     document.querySelector("#section-results").innerHTML = "";
   }
 });
-=======
-     if (event.target.id.startsWith("buttonAdd")) {
-          let eventId = event.target.id.split("--")[1]
-          let selectedEvent = document.getElementById(eventId)
-          let itineraryContainer = document.getElementById("concertItinerary")
-          itineraryContainer.innerHTML=""
-          itineraryContainer.appendChild(selectedEvent)
-          
-          //Resets after adding to itinerary//
-          document.querySelector("#section-results").innerHTML=""
-     }
-   });
->>>>>>> master
 
 let moString = "mo is the best";
 moString.split(" ")[1][("mo", "is", "the", "best")];
