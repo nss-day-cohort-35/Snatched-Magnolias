@@ -1,12 +1,17 @@
 // Cotton Eyed Joe AND HE GIVES IT BACK as a string
 function dataDisplay(text, index) {
-  return `<h3>${text}<h3> <button type="button" onclick="addMeetUpsToItin(${index})">ADD</button>`;
+  return `<h3 id="${text}">${text}</h3> <button type="button" onclick="addMeetUpsToItin(${index})">ADD</button>`;
 }
 
+//Saving Data to Itinerary 
 function addMeetUpsToItin (meetUpIndex){
     let meetUpName = meetUpsArray[meetUpIndex].name.text;
+    meetUpsName = dataDisplay;
     let itineraryContainer = document.querySelector("#meetUpsItinerary");
-    itineraryContainer.innerHTML = meetUpName;
+    itineraryContainer.innerHTML = `<h3>${meetUpName}</h3>`;
+
+//Resets after adding to itinerary//
+     document.querySelector("#section-results").innerHTML=""
 }
 
 //  Searching the API for obj.name
