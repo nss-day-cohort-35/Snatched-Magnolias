@@ -8,39 +8,36 @@ function lookUp(searchTerm) {
     });
 }
 
-const foodArray = []
+const foodArray = [];
 
-document.querySelector("#search-restaurants").addEventListener("click", event => {
-    let searchTerm = document.querySelector("#aw-search-bar").value
-    lookUp(searchTerm)
-    .then(restaurantData => {
-        console.log(restaurantData.restaurants);
-        i = -1;
-        foodArray.length = 0;
-        restaurantData.restaurants.forEach(item => {
-            i++;
-            foodArray[i] = item;
-            document.querySelector("#section-results").innerHTML += `<h3 id=${i}>${item.restaurant.name}</h3> <button type="button" id="buttonIdaw--${i}">ADD</button>`;
-        })
-    })
-});
+document
+  .querySelector("#search-restaurants")
+  .addEventListener("click", event => {
+    let searchTerm = document.querySelector("#aw-search-bar").value;
+    lookUp(searchTerm).then(restaurantData => {
+      console.log(restaurantData.restaurants);
+      i = -1;
+      foodArray.length = 0;
+      restaurantData.restaurants.forEach(item => {
+        i++;
+        foodArray[i] = item;
+        document.querySelector(
+          "#section-results"
+        ).innerHTML += `<h3 id=${i}>${item.restaurant.name}</h3> <button type="button" id="buttonIdaw--${i}">ADD</button>`;
+      });
+    });
+  });
 // function getSelectedOptions()
 
 const restaurantItin = [];
 
-
 document.querySelector("#section-results").addEventListener("click", event => {
-    if (event.target.id.startsWith("buttonIdaw")) {
-        let itemId = event.target.id.split("--")[1]
-        let selectedItem = document.getElementById(itemId)
-        let itineraryContainer = document.getElementById("restaurantItinerary")
-        itineraryContainer.innerHTML=""
-        itineraryContainer.appendChild(selectedItem)
-        document.querySelector("#section-results").innerHTML=" " 
-    }
+  if (event.target.id.startsWith("buttonIdaw")) {
+    let itemId = event.target.id.split("--")[1];
+    let selectedItem = document.getElementById(itemId);
+    let itineraryContainer = document.getElementById("restaurantItinerary");
+    itineraryContainer.innerHTML = "";
+    itineraryContainer.appendChild(selectedItem);
+    document.querySelector("#section-results").innerHTML = " ";
+  }
 });
-
-
-
-
-
